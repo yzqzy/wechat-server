@@ -1,5 +1,7 @@
 # WeChat API Service
 
+Minimalist API built using koa.
+
 ## Prepare
 
 We need the specific wechat version and dll to make windows hook work.
@@ -22,3 +24,10 @@ npm run dev
 ```bash
 npm run start
 ```
+
+## Refer 
+
+* [wechat-windows-versions](https://github.com/tom-snow/wechat-windows-versions/releases)：WeChatSetup.
+* [wechat-service](https://github.com/ChisBread/wechat-service)：Let your WeChat run as a service.
+* [wechat-gptbot](https://github.com/iuiaoin/wechat-gptbot)：A wechat robot based on ChatGPT with no risk, very stable! 
+
