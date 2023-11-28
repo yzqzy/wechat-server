@@ -1,0 +1,29 @@
+{
+  "name": "wechat-service",
+  "version": "1.0.0",
+  "description": "微信 API 服务",
+  "main": "app.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev CONFIG=config.conf PORT=4000 ./node_modules/.bin/nodemon app.js",
+    "eslint": "./node_modules/.bin/eslint ./ --ext .js",
+    "start": "pm2 startOrRestart deploy.config.js --env production"
+  },
+  "author": "heora",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.3.1",
+    "eslint-config-alloy": "3.7.3",
+    "nodemon": "^1.17.5"
+  },
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-helmet": "^6.1.0",
+    "koa-logger": "^3.2.1",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^8.0.8",
+    "superagent": "^8.0.2"
+  }
+}
