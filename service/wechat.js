@@ -12,7 +12,7 @@ const {
 
 const WeChatService = {}
 
-// 获取登陆微信账号信息
+// 获取登陆用户信息
 WeChatService.getPersonalInfo = async () => {
   const response = await request
     .post(`${BASE_PREFIX}/api/get_personal_info`)
@@ -33,7 +33,7 @@ WeChatService.getContactList = async () => {
   return normalizeContent(response)
 }
 
-// 获取指定账号信息
+// 获取用户信息
 WeChatService.getPersonalDetail = async options => {
   const { wxid } = options
   const response = await request
@@ -48,8 +48,8 @@ WeChatService.getPersonalDetail = async options => {
   return normalizeContent(response)
 }
 
-// 获取发送人昵称
-WeChatService.getSenderName = async options => {
+// 获取用户昵称
+WeChatService.getMemberName = async options => {
   const { wxid, roomid } = options
   const response = await request.post(`${BASE_PREFIX}/api/getmembernick`).send(
     serialize({
