@@ -27,15 +27,15 @@ npm run start
 
 ## API
 
-### get contact list
+### 1. get contact list
 
 /api/getcontactlist
 
-### get personal info
+### 2. get personal info
 
 /api/get_personal_info
 
-### get member nick
+### 3. get member nick
 
 /api/getmembernick
 
@@ -44,7 +44,7 @@ npm run start
 | wxid           | string | yes      | wx id       |
 | roomid         | string | no       | chatroom id |
 
-### get personal detail
+### 4. get personal detail
 
 /api/get_personal_detail
 
@@ -52,7 +52,7 @@ npm run start
 | -------------- | ------ | -------- | ------ |
 | wxid           | string | yes      | wx id  |
 
-### send msg
+### 5. send msg
 
 /api/sendmsg
 
@@ -61,7 +61,7 @@ npm run start
 | wxid           | string | yes      | wx id       |
 | content         | string | yes    | text content |
 
-### send pic
+### 6. send pic
 
 /api/sendpic
 
