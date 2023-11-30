@@ -25,6 +25,51 @@ npm run dev
 npm run start
 ```
 
+## API
+
+### get contact list
+
+/api/getcontactlist
+
+### get personal info
+
+/api/get_personal_info
+
+### get member nick
+
+/api/getmembernick
+
+| parameter name | type   | required | remark      |
+| -------------- | ------ | -------- | ----------- |
+| wxid           | string | yes      | wx id       |
+| roomid         | string | no       | chatroom id |
+
+### get personal detail
+
+/api/get_personal_detail
+
+| parameter name | type   | required | remark |
+| -------------- | ------ | -------- | ------ |
+| wxid           | string | yes      | wx id  |
+
+### send msg
+
+/api/sendmsg
+
+| parameter name | type   | required | remark      |
+| -------------- | ------ | -------- | ----------- |
+| wxid           | string | yes      | wx id       |
+| content         | string | yes    | text content |
+
+### send pic
+
+/api/sendpic
+
+| parameter name | type   | required | remark      |
+| -------------- | ------ | -------- | ----------- |
+| wxid           | string | yes      | wx id       |
+| content         | string | yes    | remote url |
+
 ## Refer 
 
 * [wechat-windows-versions](https://github.com/tom-snow/wechat-windows-versions/releases)：WeChatSetup.
