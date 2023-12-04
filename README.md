@@ -70,6 +70,10 @@ npm run start
 | wxid           | string | yes      | wx id       |
 | content         | string | yes    | remote url |
 
+## Disclaimer
+
+The content published in this warehouse is only for learning and research, please do not use it for illegal or commercial purposes! If any legal disputes arise as a result, the author has nothing to do with it! There are no backdoors or Trojans, and no information is obtained or stored. Please study and study under national laws, regulations and Tencent's relevant principles! We are not responsible for any downloads or any actions of users. Please delete them within 24 hours after downloading!
+
 ## Refer 
 
 * [wechat-windows-versions](https://github.com/tom-snow/wechat-windows-versions/releases)：WeChatSetup.
