@@ -70,7 +70,7 @@ WeChatService.sendMsg = async options => {
   return normalizeContent(response)
 }
 
-// 推送图片
+// 发送图片
 WeChatService.sendPic = async options => {
   const { wxid, content } = options
   const data = await serializeImg(wxid, content)
