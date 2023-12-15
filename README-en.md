@@ -1,4 +1,4 @@
-# WeChat API Service
+# WeChat Server
 
 English | [中文文档](README.md)
 
