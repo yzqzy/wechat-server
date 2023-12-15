@@ -1,8 +1,8 @@
 {
-  "name": "wechat-service",
+  "name": "wechat-server",
   "version": "0.0.0",
   "description": "WeChat API Server",
-  "author": "",
+  "author": "heora",
   "license": "MIT",
   "scripts": {
     "start": "npm run build && cross-env NODE_ENV=production node dist/server.js",
