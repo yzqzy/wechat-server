@@ -1,7 +1,7 @@
 {
-  "name": "wechat-service",
-  "version": "1.0.0",
-  "description": "微信 API 服务",
+  "name": "wechat-server",
+  "version": "0.0.0",
+  "description": "HTTP server based on WeChat Hook",
   "main": "app.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=dev CONFIG=config.conf PORT=4000 ./node_modules/.bin/nodemon app.js",
