@@ -16,7 +16,9 @@ describe('TEST Users API', () => {
     it('response statusCode 200 /findAll', () => {
       const findUser: User[] = UserModel;
 
-      return request(app.getServer()).get(`${route.path}`).expect(200, { data: findUser, message: 'findAll' });
+      return request(app.getServer())
+        .get(`${route.path}`)
+        .expect(200, { data: findUser, message: 'findAll' });
     });
   });
 
@@ -25,7 +27,9 @@ describe('TEST Users API', () => {
       const userId = 1;
       const findUser: User = UserModel.find(user => user.id === userId);
 
-      return request(app.getServer()).get(`${route.path}/${userId}`).expect(200, { data: findUser, message: 'findOne' });
+      return request(app.getServer())
+        .get(`${route.path}/${userId}`)
+        .expect(200, { data: findUser, message: 'findOne' });
     });
   });
 
@@ -56,7 +60,9 @@ describe('TEST Users API', () => {
       const userId = 1;
       const deleteUser: User[] = UserModel.filter(user => user.id !== userId);
 
-      return request(app.getServer()).delete(`${route.path}/${userId}`).expect(200, { data: deleteUser, message: 'deleted' });
+      return request(app.getServer())
+        .delete(`${route.path}/${userId}`)
+        .expect(200, { data: deleteUser, message: 'deleted' });
     });
   });
 });

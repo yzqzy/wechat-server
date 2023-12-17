@@ -16,7 +16,9 @@ export class WeChatService {
   }
 
   public async contacts(): Promise<{ contacts: Contact; total: number }> {
-    const response = await axios.get<Response<{ contacts: Contact; total: number }>>(`${WECHAT_HTTP_HOST}/contacts`);
+    const response = await axios.get<Response<{ contacts: Contact; total: number }>>(
+      `${WECHAT_HTTP_HOST}/contacts`,
+    );
     return response.data.data;
   }
 
